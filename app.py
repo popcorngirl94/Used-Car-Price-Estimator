@@ -130,9 +130,15 @@ class FrequencyEncoder(BaseEstimator, TransformerMixin):
 # LOAD MODEL
 # ─────────────────────────────────────────────────────────────────
 MODEL_CANDIDATES = [
-    os.path.join(os.path.dirname(__file__), "best_xgboost.pkl"),
-    r"D:\AI_Projects\Machine_Learning\ML_Models\best_xgboostregressor.pkl",
-    "best_xgboost.pkl",
+    os.path.join(
+        os.path.dirname(__file__),
+        "ML_Models",
+        "best_xgboostregressor.pkl"
+    ),
+    os.path.join(
+        os.path.dirname(__file__),
+        "best_xgboostregressor.pkl"
+    )
 ]
 
 @st.cache_resource
